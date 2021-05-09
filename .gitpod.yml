@@ -1,4 +1,5 @@
-image: jelaniwoods/appdev2021-vanilla-rails@sha256:fe07e281a5eb75f7a4cf68a172121bf62a78afd529a123d097575c6233aae1df
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - command: bundle install
@@ -8,6 +9,9 @@ ports:
     onOpen: open-preview
   - port: 5432
     onOpen: ignore
+
+workspaceLocation: canvas/canvas.code-workspace
+checkoutLocation: canvas
 
 vscode:
   extensions:
